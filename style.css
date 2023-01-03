@@ -1,71 +1,81 @@
+body{
+    margin: 20px;
+}
+
+
 .sidebartop-container{
-    display:grid;
-    grid-template-columns:        20% 60% 20%;
-    
-    
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+        
 }
 
-#cont22{
-    display:grid;
-    grid-template-columns: 30% 30% 30%;
-}
-
-.item33{
-    float: right;
-    margin-top:-65px ;
-}
-.item22{
-    margin-left: 200px;
-}
 
 .item1{
     margin:20px;
   
 }
 
-#item1{
 
-}
 
 
 .sidebartop-container2{
     display:flex;
-    flex-direction: row;
+    flex-wrap:wrap;
+    
+    flex: 0 10%;
     background-color: rgb(208, 177, 238);
     color: aliceblue;
-    height: 50px;
+    line-height: 50px;
+    margin-bottom: 1%;
+  
 }
+
+
+
 
 .item2{
     border: 1px solid white;
-    width: 100px;
-    padding: 10px;
-   
+   width: 11%;
+    padding-bottom:2%;
+   position: relative;
+
   
 }
 
 
 .content{
-    display: grid;
-   grid-template-columns: 20%      40% 30%;
-   margin: 10px 30px 0 0;
-}
-
-
-
-.textitem{
+   display:flex;
+   flex-wrap: wrap;
    
+  /* margin: 10px 30px 0 0;*/
 }
+
+
+
+
 
 .sidebarleft{
     background-color: rgb(171, 191, 224);
     color: rgb(95, 117, 153);
+   
     
 }
 .item3{
     border:1px solid white;
-    padding: 10px;
+    padding: 1em;
+    margin: 10px;
+    
 }
+
+#item3{
+padding:20px;
+font-size: 3em;
+  margin: 10px;
+
+}
+
+
 
 .imagecontainer{
  margin: 10px;
@@ -90,3 +100,44 @@ button{
     font-weight: 700;
     font-size: 20px;
 }
+
+
+
+
+/*navbar that when i click it dops down*/
+.dropdown-btn , a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #8a0c75;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+a:hover , .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+
+  .active {
+    background-color: rgb(243, 12, 139);
+    color: white;
+  }
+
+
+
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
