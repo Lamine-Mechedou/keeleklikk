@@ -1,0 +1,174 @@
+body{
+  background-color: #eee1ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Sidebartop-container*/
+.sidebartop-container{
+  display:flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  
+}
+
+
+.item11{
+  
+  background-color: white;
+ border-radius: 10%;
+  flex:0 19%;
+  margin: 5px;
+ 
+
+}
+
+#item11{
+ 
+ 
+ text-align: center;
+ background:white;
+ padding-left: 4px;
+
+}
+
+.item11:hover{
+  animation-name: red-to-blue;
+  animation-duration: 2s;
+}
+
+
+@keyframes red-to-blue{
+  from{background:rgb(53, 50, 50);color:white}
+  to{background-color: rgba(25, 25, 224, 0);color:black;}
+}
+
+
+
+@media (max-width: 800px) {
+  .sidebartop-container {
+    flex-direction: column;
+    
+  }
+}
+
+/*sidebartop-container2*/
+
+.sidebartop-container2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+
+.item2{
+  background-color: #ee98d4;
+  padding-bottom:25px; 
+  padding-top: 25px;
+  flex: 10%;
+  margin: 5px;
+  border-radius:10%;
+  
+}
+
+.item2:hover{
+  animation-name: red-to-blue;
+  animation-duration: 2s;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .sidebartop-container2 {
+    flex-direction: column;
+  }
+}
+
+/*content*/
+
+.content{
+   display:flex;
+   flex-wrap: wrap;
+  
+}
+
+/*sidebarleft*/
+
+.sidebarleft{
+    background-color: rgb(171, 191, 224);
+    color: rgb(95, 117, 153);
+   
+    
+}
+.item3{
+    border:1px solid white;
+    padding: 1em;
+    margin: 10px;
+    
+}
+
+.imagecontainer{
+ margin: 10px;
+}
+
+
+h1, h2{
+    color: blueviolet;
+}
+
+
+
+button{
+    background: rgb(168, 177, 190);
+    color: rgb(255,255,255);
+    padding: 10px;
+    width: 80px;
+    height:50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+
+/*navbar that when i click it dops down*/
+.dropdown-btn , a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #8a0c75;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+a:hover , .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+
+  .active {
+    background-color: rgb(243, 12, 139);
+    color: white;
+  }
+
+
+
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
